@@ -10,7 +10,9 @@
         <Entry 
             Placeholder="Digite o CEP"/>
         <Button Text="Pesquisar" Clicked="Button_Clicked"/>
-
+        
     </StackLayout>
+    
+    
 
 </ContentPage>

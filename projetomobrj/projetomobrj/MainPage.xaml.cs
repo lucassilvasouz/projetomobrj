@@ -24,10 +24,10 @@ namespace projetomobrj
             Console.WriteLine("Consultando Informacoes do CEP:" + cepInformado);
 
             var address = await cepCliente.GetAddressAsync(cepInformado);
-            Preferences.Set("logradouro", address.Logadouro);
-            Console.Write($"\nLogradouro:{address.Logadouro}\nBairro:{address.Bairro}\nCidade:{address.Localidade}\nIbge:{address.Ibge}\nGia:{address.Gia}");
+            //Preferences.Set("logradouro", address.Logadouro);
+            Console.Write($"\nLogradouro:{address.Logradouro}\nBairro:{address.Bairro}\nCidade:{address.Localidade}\nIbge:{address.Ibge}\nGia:{address.Gia}");
 
-            await Navigation.PushAsync(new mapa());
+            await Navigation.PushAsync(new mapa(cepInformado));
         }    
     
     }

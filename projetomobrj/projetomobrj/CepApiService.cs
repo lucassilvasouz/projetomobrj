@@ -11,8 +11,8 @@ namespace projetomobrj
 
         [JsonProperty("cep")]
         public string Cep { get; set; }
-        [JsonProperty("logadouro")]
-        public string Logadouro { get; set; }
+        [JsonProperty("logradouro")]
+        public string Logradouro { get; set; }
         [JsonProperty("complemento")]
         public string Complemento { get; set; }
         [JsonProperty("bairro")]
@@ -26,7 +26,9 @@ namespace projetomobrj
         [JsonProperty("ibge")]
         public string Ibge { get; set; }
         [JsonProperty("gia")]
-        public string Gia { get; set; } 
+        public string Gia { get; set; }
 
+      //  public string MyProperty { get; set; }
     }
+
 }
