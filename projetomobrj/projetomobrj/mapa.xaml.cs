@@ -13,11 +13,10 @@ namespace projetomobrj
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class mapa : ContentPage
     {
-        string _cepInformado;
-        public mapa(string cepInformado)
+        public mapa()
         {
             InitializeComponent();
-            _cepInformado = cepInformado;
+            
 
             Position position = new Position(36.9628066, -122.0194722);
             MapSpan mapSpan = new MapSpan(position, 0.01, 0.01);

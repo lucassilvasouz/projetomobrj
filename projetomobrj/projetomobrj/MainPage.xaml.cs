@@ -24,10 +24,16 @@ namespace projetomobrj
 
             var address = await cepCliente.GetAddressAsync(cepInformado);
             //Preferences.Set("logradouro", address.Logadouro);
-            Console.Write($"\nLogradouro:{address.Logradouro}\nBairro:{address.Bairro}\nCidade:{address.Localidade}\nIbge:{address.Ibge}\nGia:{address.Gia}");
+            logradouro.Text = $"Logradouro: {address.Logradouro}"; 
+            bairro.Text = $"Bairro: {address.Bairro}"; 
+            localidade.Text = $"Cidade:{address.Localidade}";
+            ibge.Text = $"IBGE:{address.Ibge}";
+            gia.Text= $"Gia:{address.Gia}";
+        }
 
-            await Navigation.PushAsync(new mapa(cepInformado));
-        }    
-    
+        private async void botaoMapa_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new mapa());
+        }
     }
 }

@@ -11,6 +11,13 @@
             Placeholder="Digite o CEP"
             x:Name="cepDigitado"/>
         <Button Text="Pesquisar" Clicked="Button_Clicked"/>
+        <Button x:Name="botaoMapa" Text="Mostra Mapa" Clicked="botaoMapa_Clicked"/>
+
+        <Label x:Name="logradouro"></Label>
+        <Label x:Name="bairro"></Label>
+        <Label x:Name="localidade"></Label>
+        <Label x:Name="ibge"></Label>
+        <Label x:Name="gia"></Label>
         
     </StackLayout>
     
