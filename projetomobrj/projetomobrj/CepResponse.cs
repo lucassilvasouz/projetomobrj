@@ -27,8 +27,7 @@ namespace projetomobrj
         public string Ibge { get; set; }
         [JsonProperty("gia")]
         public string Gia { get; set; }
-
-      //  public string MyProperty { get; set; }
+        public string CepImput { get; set; }
     }
 
 }

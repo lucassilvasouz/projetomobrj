@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+//using projetomobrj.CepResponse;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -19,8 +20,7 @@ namespace projetomobrj
         private async void Button_Clicked(object sender, EventArgs e)
         {
             var cepCliente = RestService.For<ICepApiService>("http://viacep.com.br");
-            //string cepInformado = Console.ReadLine().ToString();
-            string cepInformado = "79104330";
+            string cepInformado = cepDigitado.Text;
             Console.WriteLine("Consultando Informacoes do CEP:" + cepInformado);
 
             var address = await cepCliente.GetAddressAsync(cepInformado);

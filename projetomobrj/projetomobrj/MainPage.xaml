@@ -8,7 +8,8 @@
             <Label Text="Buscar CEP" HorizontalTextAlignment="Start" TextColor="Black" FontSize="36"/>
         </Frame>
         <Entry 
-            Placeholder="Digite o CEP"/>
+            Placeholder="Digite o CEP"
+            x:Name="cepDigitado"/>
         <Button Text="Pesquisar" Clicked="Button_Clicked"/>
         
     </StackLayout>
