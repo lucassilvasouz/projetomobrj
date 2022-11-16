@@ -21,7 +21,6 @@ namespace projetomobrj
         {
             var cepCliente = RestService.For<ICepApiService>("http://viacep.com.br");
             string cepInformado = cepDigitado.Text;
-            Console.WriteLine("Consultando Informacoes do CEP:" + cepInformado);
 
             var address = await cepCliente.GetAddressAsync(cepInformado);
             //Preferences.Set("logradouro", address.Logadouro);
