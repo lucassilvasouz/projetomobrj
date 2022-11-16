@@ -26,9 +26,9 @@ namespace projetomobrj
             //Preferences.Set("logradouro", address.Logadouro);
             logradouro.Text = $"Logradouro: {address.Logradouro}"; 
             bairro.Text = $"Bairro: {address.Bairro}"; 
-            localidade.Text = $"Cidade:{address.Localidade}";
-            ibge.Text = $"IBGE:{address.Ibge}";
-            gia.Text= $"Gia:{address.Gia}";
+            localidade.Text = $"Cidade: {address.Localidade}";
+            ibge.Text = $"IBGE: {address.Ibge}";
+            gia.Text= $"Gia: {address.Gia}";
         }
 
         private async void botaoMapa_Clicked(object sender, EventArgs e)
